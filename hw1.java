@@ -35,19 +35,27 @@ public class hw1 {
 		Scanner scan = new Scanner(System.in);
 
 		int n = scan.nextInt();
-		int seqCount = 0; 
+		int seqCount = 0;
+		int maxInt = n; 
 		 while (n != 1) {
 		 	if ((n/2)*2 == n) {
 		 		n = n/2;
 		 		System.out.println(n);
+		 		if (n > maxInt) {
+		 			maxInt = n;
+		 		}
 		 		seqCount++;
 		 	}else{
 		 		n =(n * 3) + 1;
 		 		System.out.println(n);
+		 		if (n > maxInt) {
+		 			maxInt = n;
+		 		}
 		 		seqCount++;
 		 	}
 		 	if(n == 1){
 		 		System.out.println("Length of the sequence is:" +seqCount);
+		 		System.out.println("Max Integer is: " + maxInt);
 		 	}
 		 	
 		 }

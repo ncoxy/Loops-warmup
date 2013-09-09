@@ -9,19 +9,22 @@ public class hw1 {
 		System.out.println("Enter a vaule for x: ");
 		Scanner s = new Scanner(System.in);
 
+		double e = 2.71828182846;
 		double x = s.nextDouble();
 
-		double fact = 1;
+		double prevTerm = 1;
+		double presum = 1;
+		double term = (Math.pow(x,n - 1 ) / (prevTerm) * (x / n));
 
-		double term = (Math.pow(x,n - 1 ));
-
-		// double sum = sum + term
+		double sum = sum + term;
 
 		
 
 		System.out.println(term);
 		System.out.println(x);
 		System.out.println(n);
+		System.out.println(prevTerm);
+		System.out.println(sum);
 
 		
 		
